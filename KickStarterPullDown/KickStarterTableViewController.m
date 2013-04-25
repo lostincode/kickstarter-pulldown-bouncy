@@ -30,8 +30,6 @@
     
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, HeaderHeight)];
-    
-    NSLog(@"center = %f",self.tableView.tableHeaderView.center.y);
 }
 
 #pragma mark - Table view data source
