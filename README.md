@@ -3,3 +3,4 @@ How to: create a cool bouncy effect like the KickStart iOS app. When you pull do
 
 <img src="http://wrichards.com/github/ios-kickstarter/kickstarter.png" width="396" height="744">
 
+This code is distributed under the terms and conditions of the MIT License.
