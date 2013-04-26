@@ -22,14 +22,17 @@
 {
     [super viewDidLoad];
     
+    self.tableView.backgroundColor = [UIColor clearColor];
+    
     self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"graffiti.jpg"]];
     self.imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, HeaderHeight);
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
-    self.imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    [self.view insertSubview:self.imageView belowSubview:self.tableView];
+    self.imageView.clipsToBounds = YES;
     
-    self.tableView.backgroundColor = [UIColor clearColor];
-    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, HeaderHeight)];
+    UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, HeaderHeight)];
+    tableHeaderView.backgroundColor = [UIColor purpleColor];
+    [tableHeaderView addSubview:self.imageView];
+    self.tableView.tableHeaderView = tableHeaderView;
 }
 
 #pragma mark - Table view data source
@@ -48,17 +51,21 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
     cell.backgroundColor = [UIColor whiteColor];
 }
 
-#pragma mark - Scrollview delegate
+#pragma mark - UIScrollView delegate
 
-- (void) scrollViewDidScroll:(UIScrollView *)scrollView {
+- (void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
     CGFloat yPos = -scrollView.contentOffset.y;
     if (yPos > 0) {
-        self.imageView.frame = CGRectMake(0, scrollView.contentOffset.y, self.view.bounds.size.width+yPos, HeaderHeight+yPos);
-        self.imageView.center = CGPointMake(CGRectGetMidX(self.view.bounds), self.tableView.tableHeaderView.center.y);
+        CGRect imgRect = self.imageView.frame;
+        imgRect.origin.y = scrollView.contentOffset.y;
+        imgRect.size.height = HeaderHeight+yPos;
+        self.imageView.frame = imgRect;
     }
 }
 

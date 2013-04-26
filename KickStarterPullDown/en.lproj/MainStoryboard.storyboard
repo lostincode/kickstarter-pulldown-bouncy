@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Kick Starter Table View Controller-->
+        <!--Kick Starter Table View Controller - KickStarter Effect-->
         <scene sceneID="A8x-Sh-2s5">
             <objects>
                 <viewController id="7ld-Gs-494" customClass="KickStarterTableViewController" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
                             <constraint firstItem="96C-52-cJo" firstAttribute="top" secondItem="GYO-s0-zSn" secondAttribute="top" type="default" id="mPc-ak-FyA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="01J-T8-W31"/>
+                    <navigationItem key="navigationItem" title="KickStarter Effect" id="01J-T8-W31"/>
                     <connections>
                         <outlet property="tableView" destination="96C-52-cJo" id="sAU-RM-B89"/>
                     </connections>
@@ -58,6 +58,7 @@
         <!--Navigation Controller-->
         <scene sceneID="neU-Fh-Ohe">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VPq-SW-MUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="sTm-pb-Lil" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -70,7 +71,6 @@
                         <segue destination="7ld-Gs-494" kind="relationship" relationship="rootViewController" id="a2O-50-frb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VPq-SW-MUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="254" y="84"/>
         </scene>
