@@ -1,5 +1,5 @@
 # KickStarter Expanding TableView Header Example
-How to: create a cool bouncy effect like the KickStarter iOS app. When you pull down on the UITableView it scales the header image.
+How to: create a bouncy image effect as seen in the KickStarter iOS app. When you pull down on the UITableView it scales the header image uising the UIScrollView delegate.
 
 <img src="http://wrichards.com/github/ios-kickstarter/kickstarter.png" width="396" height="744">
 
