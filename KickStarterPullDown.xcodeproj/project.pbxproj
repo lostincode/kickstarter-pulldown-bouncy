@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4C91AF19B807130000C1DA /* graffiti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C91AE19B807130000C1DA /* graffiti.jpg */; };
 		2A945B4F172994A600A4B7E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A945B4E172994A600A4B7E8 /* UIKit.framework */; };
 		2A945B51172994A600A4B7E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A945B50172994A600A4B7E8 /* Foundation.framework */; };
 		2A945B53172994A600A4B7E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A945B52172994A600A4B7E8 /* CoreGraphics.framework */; };
@@ -18,10 +19,10 @@
 		2A945B65172994A600A4B7E8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A945B64172994A600A4B7E8 /* Default-568h@2x.png */; };
 		2A945B68172994A600A4B7E8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A945B66172994A600A4B7E8 /* MainStoryboard.storyboard */; };
 		2A945B73172994DB00A4B7E8 /* KickStarterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A945B72172994DB00A4B7E8 /* KickStarterTableViewController.m */; };
-		2A945B751729976900A4B7E8 /* graffiti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A945B741729976900A4B7E8 /* graffiti.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4C91AE19B807130000C1DA /* graffiti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graffiti.jpg; sourceTree = "<group>"; };
 		2A945B4B172994A600A4B7E8 /* KickStarterPullDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KickStarterPullDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A945B4E172994A600A4B7E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2A945B50172994A600A4B7E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,7 +39,6 @@
 		2A945B67172994A600A4B7E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2A945B71172994DB00A4B7E8 /* KickStarterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KickStarterTableViewController.h; sourceTree = "<group>"; };
 		2A945B72172994DB00A4B7E8 /* KickStarterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KickStarterTableViewController.m; sourceTree = "<group>"; };
-		2A945B741729976900A4B7E8 /* graffiti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = graffiti.jpg; path = ../../../../../Pictures/graffiti.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		2A945B55172994A600A4B7E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2A945B741729976900A4B7E8 /* graffiti.jpg */,
+				2A4C91AE19B807130000C1DA /* graffiti.jpg */,
 				2A945B56172994A600A4B7E8 /* KickStarterPullDown-Info.plist */,
 				2A945B57172994A600A4B7E8 /* InfoPlist.strings */,
 				2A945B5A172994A600A4B7E8 /* main.m */,
@@ -166,7 +166,7 @@
 				2A945B63172994A600A4B7E8 /* Default@2x.png in Resources */,
 				2A945B65172994A600A4B7E8 /* Default-568h@2x.png in Resources */,
 				2A945B68172994A600A4B7E8 /* MainStoryboard.storyboard in Resources */,
-				2A945B751729976900A4B7E8 /* graffiti.jpg in Resources */,
+				2A4C91AF19B807130000C1DA /* graffiti.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +302,7 @@
 				2A945B70172994A600A4B7E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
